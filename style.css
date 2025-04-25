@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'RoadRace';
+    src: url('fonts/RoadRaceExtra-Outline.woff2') format('woff2'),
+        url('fonts/RoadRaceExtra-Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+:root {
+    --border: 3px double #444;
+    --reg-size: 20px;
+    --header-size: 32px;
+    --reg-font: "Verdana";
+}
+
+body {
+    padding: 20px;
+    height: 11in;
+    width: 8.5in;
+    font-family: var(--reg-font);
+    font-size: var(--reg-size);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: var(--border);
+}
+
+h1 {
+    line-height: .9;
+}
+
+h1 span {
+    display: block;
+    font-weight: normal;
+}
+
+h1 span:nth-child(1){
+    font-family: "RoadRace";
+    color: black;
+    font-size: 82px;
+    letter-spacing: 4px;
+}
+
+h1 span:nth-child(2){
+    font-family: "RoadRace";
+    font-size: 82px;
+    letter-spacing: 6px;
+    font-weight: 100;
+    padding-left: 4px;
+}
+
+h1 span:nth-child(3){
+    font-size: 26px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.links-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-left: var(--border);
+    padding-left: 10px;
+}
+
+.links-list li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--reg-size);
+}
+
+/* -----------summary------------- */
+
+#summary {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: var(--border);
+}
+h2 {
+    font-size: var(--header-size);
+    font-weight: 500;
+    line-height: .8;
+    padding-bottom: 10px;
+}
+#summary p {
+    font-size: var(--reg-size);
+    line-height: 1.4;
+}
+
+/* --------skills ------------ */
+
+#container {
+    display: flex;
+    gap: 60px;
+}
+
+#skills {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 5px;
+}
+
+ul.skills-list li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#skills h2:nth-child(3){
+    padding-top: 25px;
+}
+
+/* ----------experience----------------  */
+
+#experience{
+    margin-top: 15px;
+    padding-left: 15px;
+    border-left: var(--border);
+}
+h3 {
+    font-weight: 500;
+    padding-top: 17px;
+    border-bottom: .5px solid #555;
+}
+
+#experience ul {
+    padding-left: 10px;
+}
+#experience ul li {
+    list-style-type: none;
+    padding-top: 10px;
+}
+#experience span {
+    padding-top: 20px;
+    font-size: 16px;
+    display: block;
+}
