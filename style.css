@@ -137,7 +137,7 @@ ul.skills-list li{
 
 #experience{
     margin-top: 15px;
-    padding-left: 15px;
+    padding-left: 30px;
     border-left: var(--border);
 }
 h3 {
@@ -146,15 +146,13 @@ h3 {
     border-bottom: .5px solid #555;
 }
 
-#experience ul {
-    padding-left: 10px;
-}
 #experience ul li {
-    list-style-type: none;
     padding-top: 10px;
 }
+
 #experience span {
     padding-top: 20px;
     font-size: 16px;
     display: block;
+    margin-left: -15px;
 }
