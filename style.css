@@ -79,8 +79,7 @@
 /* -----------summary------------- */
 
 #summary {
-    padding-top: var(--vert-rhythm);
-    padding-bottom: var(--vert-rhythm);
+    padding: var(--vert-rhythm) 15px;
     border-bottom: var(--border);
     text-align: center;
 }
