@@ -22,9 +22,6 @@
     height: 11in;
     font-size: var(--body-size);
 }
-.page:nth-last-of-type(1){
-    margin-top: 10px;
-}
 
 /* ----------- info --------------- */
 
@@ -72,14 +69,12 @@
 .links-list li i{
     padding-right: 10px;
 }
-.links-list li a{
+.links-list li p{
     display: inline;
     color: black;
     text-decoration: none;
 }
-.links-list li a:hover{
-    text-decoration: underline;
-}
+
 
 /* -----------summary------------- */
 
@@ -106,40 +101,33 @@ h2 {
 .container {
     display: flex;
     width: 100%;
+    flex-direction: row;
 }
 .skills {
-    padding-top: 15px;
+    margin-top: 15px;
     padding-right: 10px;
     display: flex;
     flex-direction: column;
-    min-width: 260px;
+    margin-left: 10px;
+    border-right: var(--border);
 }
+
 
 h3 {
     font-weight: 500;
-    padding-top: var(--vert-rhythm);
+    padding-top: 12px;
     border-bottom: .5px solid #555;
 }
 
 ul.skills-list {
-    display: flex;
-    flex-direction: column;
+    padding-left: 15px;
     padding-top: 5px;
-    gap: 6px;
 }
 
-ul.skills-list li{
-    list-style-type: none;
-    display: flex;
-    align-items: flex-start;
-    gap: 6px;
+ul.skills-list li {
+    padding-top: 5px;
 }
-ul.skills-list li i{
-padding-top: 4px;
-}
-.skills:nth-last-of-type(1) h2 {
-    margin-top: 15px;
-}
+
 
 /* ----------projects----------------  */
 
@@ -148,25 +136,15 @@ padding-top: 4px;
 }
 #projects, #education {
     padding-left: 33px;
-    border-left: var(--border);
+    line-height: 1.6;
 }
 #projects .info, #education .info  {
     font-style: oblique;
     padding-bottom: var(--vert-rhythm);
 }
-#projects ul, #education ul {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    list-style-type: none;
-}
+
 #projects ul li, #education ul li {
-    display: flex;
-    align-items: flex-start;
-    gap: 6px;
-}
-#projects ul i, #education ul i{
-    padding-top: 4px;
+    padding-top: 8px;
 }
 #projects span {
     padding-top: 7px;
@@ -176,5 +154,5 @@ padding-top: 4px;
 }
 
 #education {
-    margin-top: 15px;
+    padding-top: 6px;
 }
