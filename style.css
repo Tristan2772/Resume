@@ -127,15 +127,14 @@ ul.skills-list li {
     padding-top: 5px;
 }
 
-
 /* ----------projects----------------  */
 
 #projects{
     margin-top: 15px;
 }
 #projects, #education {
-    padding-left: 33px;
-    line-height: 1.6;
+    padding-left: 30px;
+    line-height: 1.55;
 }
 #projects .info, #education .info  {
     font-style: oblique;
@@ -144,6 +143,7 @@ ul.skills-list li {
 
 #projects ul li, #education ul li {
     padding-top: 8px;
+    list-style-position: inside;
 }
 #projects span {
     padding-top: 7px;
